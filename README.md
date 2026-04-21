@@ -1,4 +1,4 @@
-# Posgresql generate and insert transactional data with Optimization techniques and Dynamic Report
+# Work with PosgreSQL transactional data Project
 
 ## 📖 Overview
 Using sql to make 
