@@ -52,7 +52,7 @@ python src/aiohttp_method.py
    Colons can be used to align columns.
    
    | Query         | Before (Seq Scan)         | After (Partition + Index  |
-   | ------------- |:-------------------------:| -------------------------:|
+   | ------------- |:-------------------------:| -------------------------|
    | col 3 is      | 241.234 ms                | 200 ms |
    | col 2 is      | centered                  |   $12 |
    | zebra stripes | are neat                  |    $1 |
