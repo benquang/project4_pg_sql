@@ -46,6 +46,13 @@ python src/aiohttp_method.py
         + (floor(random() * (DATE '2025-10-31' - DATE '2025-08-01'))) * interval '1 day' AS order_date,
       ```
 
+## 📊 Optimization compare
+   1. Orders volume: 2500000 records with defined status distribution
+                                        | Seq Scan   | Partition + Index |
+      | ------------------------------- | ---------- | ------------------|
+      | 1. Total revenue per month      | 241.426 ms | 100.000 ms        |
+      | Content Cell  | Content Cell  |
+      
 ## ⭐ Features
 - Asynchronous API requests
 - JSON data export
