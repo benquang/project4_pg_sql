@@ -14,7 +14,7 @@ python src/aiohttp_method.py
 ```
 
 ## 📊 Check data requirements
-   1. Orders volume: 2500000 records
+   1. Orders volume: 2500000 records with defined status distribution
       ```
       WITH status_pool AS (
           SELECT 'PLACED' AS status FROM generate_series(1, 5000*25)  -- 5%
@@ -31,30 +31,18 @@ python src/aiohttp_method.py
       )
       ```
 
-   2. Execution time for each method:
-      So we have a 200 STATUS response for getting product successfully, with ~100 products/2 minutes so the estimated execution time is about 66 hours.
+   2. Order items: each product must belong to the same `seller_id` as the order
+      And randomly selected from product table:
       ```
-        [OK] GET JSON successfully for product 1391347
-        [OK] GET JSON successfully for product 74897599
-        [OK] GET JSON successfully for product 154155413
-        [OK] GET JSON successfully for product 253117062
+        WHERE pr2.seller_id = o.seller_id
+        ...
+        LIMIT (3 + floor(random() * 2))  -- random 3 to 4 products
       ```
 
-      The exection time for aiohttp + asyncio method is about 90 minutes, this is numbers of ERROR products:
+      `order_date` value constraint:
       ```
-      Numbers of ERROR products: 9456
-      ERROR Catgeory:
-      - HTTP 404: 6638
-      - HTTP 429: 2810
-      - 'NoneType' object is not iterable: 8
-      ```
-   3. Execution again for 429 & 404 ERROR products and save to CSV list of product ids:
-      We retry for list of 429 ERROR products and get more sucessfully products (2698/2810 [OK]). For list of 404 ERROR products (with retry request 5 times and 1 second sleep time), we found that all of them are NOT FOUND product from Tiki API, so from 200000 unique product ids, we get:
-       ```
-      Total of GET successfully products: 193242 
-      Numbers of ERROR products: 6758
-      - HTTP 404: 6750
-      - 'NoneType' object is not iterable: 8 (the image information is NULL, we can ignore this or check again to get them)
+      DATE '2025-08-01'
+        + (floor(random() * (DATE '2025-10-31' - DATE '2025-08-01'))) * interval '1 day' AS order_date,
       ```
 
 ## ⭐ Features
