@@ -53,9 +53,9 @@ python src/aiohttp_method.py
    
    | Query         | Before (Seq Scan)         | After (Partition + Index  |
    | ------------- |:-------------------------:| -------------------------|
-   | col 3 is      | 241.234 ms                | 200 ms |
-   | col 2 is      | centered                  |   $12 |
-   | zebra stripes | are neat                  |    $1 |
+   | 1. Total revenue per month      | 241 ms                | 201 ms |
+   | 2. Orders filtered by seller and date     | 106 ms                  |   105 ms |
+   | 3. Filter data in `order_item` by product_id | 168 ms                  |    3.5 ms |
    
    There must be at least 3 dashes separating each header cell.
    The outer pipes (|) are optional, and you don't need to make the 
