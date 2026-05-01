@@ -47,15 +47,13 @@ python src/aiohttp_method.py
       ```
 
 ## 📊 Optimization compare
-   1. Orders volume: 2500000 records with defined status distribution
-
-      Colons can be used to align columns.
-      
-      | Query         | Before (Seq Scan)         | After (Partition + Index)  |
-      | ------------- |:-------------------------:| -------------------------|
-      | 1. Total revenue per month      | 241 ms                | 201 ms |
-      | 2. Orders filtered by seller and date     | 106 ms                  |   105 ms |
-      | 3. Filter data in `order_item` by product_id | 168 ms                  |    3.5 ms |
+   Work with 2500000 records Orders & 8749358 records Order_item in this project
+   
+   | Query         | Before (Seq Scan)         | After (Partition + Index)  |
+   | ------------- |:-------------------------:| -------------------------|
+   | 1. Total revenue per month      | 241 ms                | 201 ms |
+   | 2. Orders filtered by seller and date     | 106 ms                  |   105 ms |
+   | 3. Filter data in `order_item` by product_id | 168 ms                  |    3.5 ms |
    
       
 ## ⭐ Features
