@@ -32,7 +32,8 @@ python src/aiohttp_method.py
       ```
 
    2. Order items: each product must belong to the same `seller_id` as the order
-      And randomly selected from product table:
+      
+      and randomly selected from product table:
       ```
         WHERE pr2.seller_id = o.seller_id
         ...
