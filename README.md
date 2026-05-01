@@ -49,22 +49,14 @@ python src/aiohttp_method.py
 ## 📊 Optimization compare
    1. Orders volume: 2500000 records with defined status distribution
 
-   Colons can be used to align columns.
+      Colons can be used to align columns.
+      
+      | Query         | Before (Seq Scan)         | After (Partition + Index)  |
+      | ------------- |:-------------------------:| -------------------------|
+      | 1. Total revenue per month      | 241 ms                | 201 ms |
+      | 2. Orders filtered by seller and date     | 106 ms                  |   105 ms |
+      | 3. Filter data in `order_item` by product_id | 168 ms                  |    3.5 ms |
    
-   | Query         | Before (Seq Scan)         | After (Partition + Index  |
-   | ------------- |:-------------------------:| -------------------------|
-   | 1. Total revenue per month      | 241 ms                | 201 ms |
-   | 2. Orders filtered by seller and date     | 106 ms                  |   105 ms |
-   | 3. Filter data in `order_item` by product_id | 168 ms                  |    3.5 ms |
-   
-   There must be at least 3 dashes separating each header cell.
-   The outer pipes (|) are optional, and you don't need to make the 
-   raw Markdown line up prettily. You can also use inline Markdown.
-   
-   Markdown | Less | Pretty
-   --- | --- | ---
-   *Still* | `renders` | **nicely**
-   1 | 2 | 3
       
 ## ⭐ Features
 - Asynchronous API requests
