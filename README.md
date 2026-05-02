@@ -90,6 +90,12 @@ python src/aiohttp_method.py
       | 2 | Winters Inc | 20648 | Grass-roots bi-directional frame | 14702 | 156011272736.00 |
 
    5. Orders Status Summary report
+      |status|total_orders||total_revenue|product_name|total_quantity|total_revenue|
+      | --- | --- | --- | --- | --- | --- |
+      | CANCELLED | 97023 | 34828514483853.00 | Programmable maximized installation | 14807 | 96595048849.00 |
+      | 1 | Turner-Morris | 20992 | Enterprise-wide disintermediate application | 14491 | 294817163386.00 |
+      | 2 | Winters Inc | 20648 | Grass-roots bi-directional frame | 14702 | 156011272736.00 |
+      
       |status|total_orders||total_revenue|
       | --- | --- | --- |
       | CANCELLED | 97023 | 34828514483853.00 |
