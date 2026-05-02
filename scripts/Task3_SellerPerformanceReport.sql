@@ -39,7 +39,7 @@ $$;
 
 -- ALL sellers
 SELECT * 
-FROM seller_performance_report('2025-08-01', '2025-08-31')
+FROM seller_performance_report('2025-08-01', '2025-08-31');
 
 -- Filter by a category
 SELECT * 
