@@ -9,9 +9,9 @@ This project focuses on creating synthetic transactional data for two main table
 
 ## 🚀 Usage
 - Open `pgadmin 4`, create a database (eg: lab3_ecommerce_db) then execute the `initial_sql_schemas` script for first necessary data.
-- In [/scripts](https://github.com/benquang/project4_pg_sql/tree/main/scripts), run from task 1 to 3 (each task has multiple parts) to complete project's requirements.
+- In [/scripts](https://github.com/benquang/project4_pg_sql/tree/main/scripts), run from task 1 to 3 (each task has multiple parts) to following project's requirements.
 
-## 📊 Check data requirements
+## 📄 Check data requirements
    1. Orders volume: 2500000 records with defined status distribution
       ```
       WITH status_pool AS (
@@ -44,7 +44,7 @@ This project focuses on creating synthetic transactional data for two main table
         + (floor(random() * (DATE '2025-10-31' - DATE '2025-08-01'))) * interval '1 day' AS order_date,
       ```
 
-## 📊 Optimization compare
+## ↔️ Optimization compare
    Work with 2500000 records Orders & 8749358 records Order_item in this project, for task3 we have the biggest different runtime excution.
    
    | Query         | Before (Seq Scan)         | After (Partition + Index)  |
@@ -98,10 +98,6 @@ This project focuses on creating synthetic transactional data for two main table
       | SHIPPED | 151865| 54447941428709.00 |
             
 ## ⭐ Features
-- Asynchronous API requests
-- JSON data export
-- Error handling and logging
-- Detail project's description: https://www.notion.so/Project-2-30fdcb66205b80d3a523d99b8ea08b45
-
-## SUPERVISOR for Request Programming
-- Check this link: https://www.notion.so/Supervisor-on-Ubuntu-316dcb66205b807da38aebe7549dbafb?source=copy_link
+- Generating data using SQL
+- PostgreSQL table partitions, index
+- Business-revelant reports
