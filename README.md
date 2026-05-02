@@ -47,13 +47,18 @@ python src/aiohttp_method.py
       ```
 
 ## 📊 Optimization compare
-   Work with 2500000 records Orders & 8749358 records Order_item in this project
+   Work with 2500000 records Orders & 8749358 records Order_item in this project, for task3 we have the biggest different runtime excution.
    
    | Query         | Before (Seq Scan)         | After (Partition + Index)  |
    | ------------- |:-------------------------:| -------------------------|
    | 1. Total revenue per month      | 241 ms                | 201 ms |
    | 2. Orders filtered by seller and date     | 106 ms                  |   105 ms |
-   | 3. Filter data in `order_item` by product_id | 168 ms                  |    3.5 ms |
+   | 3. Filter data in order_item by `product_id` | 168 ms                  |    3.5 ms |
+   | 4. Find order with highest total_amount | 130 ms                  |    130 ms |
+   | 5. List products with highest quantity sold | 500 ms                  |    450 ms |
+   | 6. Orders by Seller in October | 140 ms                  |    140 ms |
+   | 7. Revenue per Product per Month | 2500 ms                  |    2400 ms |
+   | 8. Products Sold per Seller | 1900 ms                  |    1850 ms |
    
       
 ## ⭐ Features
