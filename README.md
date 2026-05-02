@@ -60,6 +60,14 @@ python src/aiohttp_method.py
    | 7. Revenue per Product per Month | 2500 ms                  |    2400 ms |
    | 8. Products Sold per Seller | 1900 ms                  |    1850 ms |
    
+## 📊 Dynamic Reports
+   1. Monthly revenue report
+      ## This is a most popular repository list for SQL sorted by number of stars
+      |STARS|FORKS|ISSUES|LAST COMMIT|NAME/PLACE|DESCRIPTION|
+      | --- | --- | --- | --- | --- | --- |
+      | 468 | 221 | 6 | 15 days ago | [wilayah](https://github.com/cahyadsn/wilayah)/1 | Kode dan Data Wilayah Administrasi & Pulau Indonesia sesuai Permendagri No 58 Tahun 2021*  dengan PHP+MySQL+AJaX. Demo link : https://wilayah.cahyadsn.com/v2.4/ |
+      | 316 | 68 | 142 | 17 hours ago | [mais](https://github.com/basedosdados/mais)/2 | Código de tratamento e infraestrutura do datalake público BD+ | 📖 Docs: https://basedosdados.github.io/mais/ |
+      | 298 | 181 | 7 | 8 years ago | [agilebill](https://github.com/tony-landis/agilebill)/3 | Open source billing and invoicing |
       
 ## ⭐ Features
 - Asynchronous API requests
