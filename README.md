@@ -95,18 +95,6 @@ python src/aiohttp_method.py
       | CANCELLED | 97023 | 34828514483853.00 | Programmable maximized installation | 14807 | 96595048849.00 |
       | 1 | Turner-Morris | 20992 | Enterprise-wide disintermediate application | 14491 | 294817163386.00 |
       | 2 | Winters Inc | 20648 | Grass-roots bi-directional frame | 14702 | 156011272736.00 |
-      
-      |status|total_orders||total_revenue|
-      | --- | --- | --- |
-      | CANCELLED | 97023 | 34828514483853.00 |
-      | DELIVERED | 969502 | 347927555179480.00 | 
-      | PAID | 55449 | 19865211339635.00 |
-      | PLACED | 69258 | 24883414292837.00 |
-      | RETURNED | 41404 | 14876510701876.00 | 
-      | SHIPPED | 151865 | 54447941428709.00 |
-
-
-
             
 ## ⭐ Features
 - Asynchronous API requests
