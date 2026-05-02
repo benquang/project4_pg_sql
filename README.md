@@ -4,8 +4,8 @@
 This project focuses on creating synthetic transactional data for two main tables Orders & Order_Item with data requirements.
 
 ## 📋 Requirements
-- PostgreSQL 17.9 +
-- `pgAdmin 4` as management tool
+- PostgreSQL 17.9 + (https://www.postgresql.org/download/windows/)
+- `pgAdmin 4` as management tool (https://www.pgadmin.org/download/pgadmin-4-windows/)
 
 ## 🚀 Usage
 - Open `pgadmin 4`, create a database (eg: lab3_ecommerce_db) then execute the `initial_sql_schemas` script for first necessary data.
