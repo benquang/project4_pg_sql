@@ -90,11 +90,14 @@ python src/aiohttp_method.py
       | 2 | Winters Inc | 20648 | Grass-roots bi-directional frame | 14702 | 156011272736.00 |
 
    5. Top Products per Brand report
-      |brand_id|brand_name|product_id|
+      |status|total_orders|total_revenue|
       | --- | --- | --- |
-      | 1 | Turner-Morris | 21682 |
-      | 1 | Turner-Morris | 20992 |
-      | 2 | Winters Inc | 20648 |
+      | CANCELLED | 97023 | 34828514483853.00 |
+      | DELIVERED | 969502 | 347927555179480.00 |
+      | PAID | 55449| 19865211339635.00 |
+      | PLACED | 69258 | 24883414292837.00 |
+      | RETURNED | 41404 | 14876510701876.00 |
+      | SHIPPED | 151865| 54447941428709.00 |
             
 ## ⭐ Features
 - Asynchronous API requests
