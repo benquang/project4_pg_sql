@@ -8,10 +8,8 @@ This project focuses on creating synthetic transactional data for two main table
 - `pgAdmin 4` as management tool
 
 ## 🚀 Usage
-Run the .py file for each method using for fetching Tiki product data (aiohttp & requests):
-```bash
-python src/aiohttp_method.py
-```
+- Open `pgadmin 4`, create a database (eg: lab3_ecommerce_db) then execute the `initial_sql_schemas` script for first necessary data.
+- In [/scripts](https://github.com/benquang/project4_pg_sql/tree/main/scripts), run from task 1 to 3 (each task has multiple parts) to complete project's requirements.
 
 ## 📊 Check data requirements
    1. Orders volume: 2500000 records with defined status distribution
