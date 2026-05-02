@@ -63,11 +63,18 @@ python src/aiohttp_method.py
 ## 📊 Dynamic Reports
    1. Monthly revenue report
       |date|total_orders|total_quantity|total_revenue|
-      | --- | --- | --- | --- | --- | --- |
+      | --- | --- | --- | --- |
       | 2025-08-01 | 141 | 435 | 10147015168.00 |
       | 2025-08-02 | 137 | 372 | 7914431693.00 | 
-      | 2025-08-03 | 126 | 378 | 8028256551.00 | 
-      
+      | 2025-08-03 | 126 | 378 | 8028256551.00 |
+
+      ## This is a most popular repository list for SQL sorted by number of stars
+      |STARS|FORKS|ISSUES|LAST COMMIT|NAME/PLACE|DESCRIPTION|
+      | --- | --- | --- | --- | --- | --- |
+      | 468 | 221 | 6 | 15 days ago | [wilayah](https://github.com/cahyadsn/wilayah)/1 | Kode dan Data Wilayah Administrasi & Pulau Indonesia sesuai Permendagri No 58 Tahun 2021*  dengan PHP+MySQL+AJaX. Demo link : https://wilayah.cahyadsn.com/v2.4/ |
+      | 316 | 68 | 142 | 17 hours ago | [mais](https://github.com/basedosdados/mais)/2 | Código de tratamento e infraestrutura do datalake público BD+ | 📖 Docs: https://basedosdados.github.io/mais/ |
+      | 298 | 181 | 7 | 8 years ago | [agilebill](https://github.com/tony-landis/agilebill)/3 | Open source billing and invoicing |
+            
 ## ⭐ Features
 - Asynchronous API requests
 - JSON data export
