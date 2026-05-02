@@ -61,19 +61,46 @@ python src/aiohttp_method.py
    | 8. Products Sold per Seller | 1900 ms                  |    1850 ms |
    
 ## 📊 Dynamic Reports
-   1. Monthly revenue report
+   1. Monthly Revenue report
       |date|total_orders|total_quantity|total_revenue|
       | --- | --- | --- | --- |
       | 2025-08-01 | 141 | 435 | 10147015168.00 |
       | 2025-08-02 | 137 | 372 | 7914431693.00 | 
       | 2025-08-03 | 126 | 378 | 8028256551.00 |
+      
+   2. Daily revenue report
+      |month|total_orders|total_quantity|total_revenue|
+      | --- | --- | --- | --- |
+      | 2025-08-01 | 853332 | 8957900 | 229224645904692.00 |
+      | 2025-09-01 | 824522 | 8657339 | 221570271807835.00 | 
+      | 2025-10-01 | 822146 | 8630622 | 220820438260984.00 |
 
-      ## This is a most popular repository list for SQL sorted by number of stars
-      |STARS|FORKS|ISSUES|LAST COMMIT|NAME/PLACE|DESCRIPTION|
+   3. Seller Performance report
+      |seller_id|seller_name|total_orders|total_quantity|total_revenue|
+      | --- | --- | --- | --- | --- |
+      | 1001 | Sanchez LLC | 11941 | 40527 | 1160080434815.00 |
+      | 1016 | Gordon Ltd | 11285 | 38354 | 1110404024906.00 |
+      | 1003 | Baker-Carpenter | 8913 | 29383 | 1048304356695.00 |
+
+   4. Top Products per Brand report
+      |brand_id|brand_name|product_id|product_name|total_quantity|total_revenue|
       | --- | --- | --- | --- | --- | --- |
-      | 468 | 221 | 6 | 15 days ago | [wilayah](https://github.com/cahyadsn/wilayah)/1 | Kode dan Data Wilayah Administrasi & Pulau Indonesia sesuai Permendagri No 58 Tahun 2021*  dengan PHP+MySQL+AJaX. Demo link : https://wilayah.cahyadsn.com/v2.4/ |
-      | 316 | 68 | 142 | 17 hours ago | [mais](https://github.com/basedosdados/mais)/2 | Código de tratamento e infraestrutura do datalake público BD+ | 📖 Docs: https://basedosdados.github.io/mais/ |
-      | 298 | 181 | 7 | 8 years ago | [agilebill](https://github.com/tony-landis/agilebill)/3 | Open source billing and invoicing |
+      | 1 | Turner-Morris | 21682 | Programmable maximized installation | 14807 | 96595048849.00 |
+      | 1 | Turner-Morris | 20992 | Enterprise-wide disintermediate application | 14491 | 294817163386.00 |
+      | 2 | Winters Inc | 20648 | Grass-roots bi-directional frame | 14702 | 156011272736.00 |
+
+   5. Orders Status Summary report
+      |status|total_orders||total_revenue|
+      | --- | --- | --- |
+      | CANCELLED | 97023 | 34828514483853.00 |
+      | DELIVERED | 969502 | 347927555179480.00 | 
+      | PAID | 55449 | 19865211339635.00 |
+      | PLACED | 69258 | 24883414292837.00 |
+      | RETURNED | 41404 | 14876510701876.00 | 
+      | SHIPPED | 151865 | 54447941428709.00 |
+
+
+
             
 ## ⭐ Features
 - Asynchronous API requests
